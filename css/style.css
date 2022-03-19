@@ -19,6 +19,29 @@ body .wrap {
   left: 50%;
   margin-top: -200px;
   margin-left: -300px;
+  /*
+  .eye1{
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          margin-top: 150px;
+          margin-left: 180px;
+          border-radius: 50%;
+          background: rgb(0, 0, 0);
+          z-index: 4;
+  }
+
+  .eye2{
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          margin-top: 150px;
+          margin-left: 240px;
+          border-radius: 50%;
+          background: rgb(0, 0, 0);
+          z-index: 4;
+  }
+  */
 }
 body .wrap .flag {
   width: 100%;
@@ -64,25 +87,35 @@ body .wrap .flower {
   margin-left: 350px;
   z-index: 3;
 }
-body .wrap .eye1 {
-  width: 15px;
-  height: 15px;
+body .wrap .eyes {
   position: absolute;
-  margin-top: 150px;
-  margin-left: 180px;
-  border-radius: 50%;
-  background: black;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 100%;
+  left: -34px;
+  text-align: center;
+  overflow: hidden;
   z-index: 4;
 }
-body .wrap .eye2 {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  margin-top: 150px;
-  margin-left: 240px;
+body .wrap .eyes .eye {
+  width: 40px;
+  height: 30px;
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  margin: 15px;
   border-radius: 50%;
-  background: black;
-  z-index: 4;
+}
+body .wrap .eyes .eye .ball {
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #333;
 }
 body .wrap .nose {
   width: 30px;

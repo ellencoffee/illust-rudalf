@@ -68,6 +68,49 @@ body{
             z-index: 3;
         }
 
+        .eyes{
+          position: absolute;
+          top: 30%;
+          transform: translateY(-50%);
+          width: 100%;
+          left: -34px;
+          text-align: center;
+          overflow: hidden;
+          z-index: 4;
+
+          .eye{
+            width: 40px;
+            height: 30px;
+            background-color: rgb(255, 255, 255);
+            position: relative;
+            display: inline-block;
+            margin: 15px;
+            border-radius: 50%;
+
+            .ball{
+              width: 10px;
+              height: 10px;
+              background: #000;
+              border-radius: 50%;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              border: 3px solid #333;
+            }
+
+          }
+
+        }
+
+
+
+
+
+
+
+
+        /*
         .eye1{
                 width: 15px;
                 height: 15px;
@@ -89,6 +132,7 @@ body{
                 background: rgb(0, 0, 0);
                 z-index: 4;
         }
+        */
 
         .nose{
                 width: 30px;
