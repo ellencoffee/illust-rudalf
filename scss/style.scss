@@ -158,7 +158,94 @@ body{
               transition: 0.5s;              
 
             }
+          
           }
+  }
+
+
+    @keyframes leftarm {
+      0% {
+        transform: rotate(20deg);
+        opacity: 1;
+      }
+      25% {
+        transform: rotate(10deg);
+        opacity: 1;
+      }
+      50% {
+        transform: rotate(20deg);
+        opacity: 1;
+      }
+      75% {
+        transform: rotate(10deg);
+        opacity: 1;
+      }
+      100% {
+        transform: rotate(20deg);
+        opacity: 1;
+      }
+  }
+
+  @keyframes rightarm {
+      0% {
+        transform: rotate(30deg);
+        opacity: 1;
+      }
+      25% {
+        transform: rotate(50deg);
+        opacity: 1;
+      }
+      50% {
+        transform: rotate(30deg);
+        opacity: 1;
+      }
+      75% {
+        transform: rotate(50deg);
+        opacity: 1;
+      }
+      100% {
+        transform: rotate(30deg);
+        opacity: 1;
+      }
+  }
+
+
+}
+
+
+.nose{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  min-height: 100px;
+ // border:2px solid rgba(255, 62, 62, 0.308);
+  //background: #333;
+  z-index: 5;
+  transform: translate(163%,30%);
+
+  a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ff1b1b;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+
+  a:hover{
+    color: #ffffff;
+    background: #ff0101;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff010146, 0 0 40px #ff0202a6, 0 0 80px #ff0000;
+  }
+
+}
 
 
 
@@ -225,52 +312,3 @@ body{
 
 
 
-      @keyframes leftarm {
-          0% {
-            transform: rotate(20deg);
-            opacity: 1;
-          }
-          25% {
-            transform: rotate(10deg);
-            opacity: 1;
-          }
-          50% {
-            transform: rotate(20deg);
-            opacity: 1;
-          }
-          75% {
-            transform: rotate(10deg);
-            opacity: 1;
-          }
-          100% {
-            transform: rotate(20deg);
-            opacity: 1;
-          }
-      }
-
-      @keyframes rightarm {
-          0% {
-            transform: rotate(30deg);
-            opacity: 1;
-          }
-          25% {
-            transform: rotate(50deg);
-            opacity: 1;
-          }
-          50% {
-            transform: rotate(30deg);
-            opacity: 1;
-          }
-          75% {
-            transform: rotate(50deg);
-            opacity: 1;
-          }
-          100% {
-            transform: rotate(30deg);
-            opacity: 1;
-          }
-      }
-
-  }
-
-}  
